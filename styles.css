@@ -1,0 +1,353 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+    background-color: #E8388C;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        width: 120px;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: #E8388C;
+    padding: 100px 0;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+/* Botón en el Hero Section */
+.hero-section .cta-button {
+    background-color: #FDBB2C;
+    color: #333;
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .cta-button:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+/* Bloque de imagen */
+.hero-image {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/63705e65f4ed637d7d05bb7f/fbaffda7-8301-45a1-94a1-f53c4777c448/artworks-022_1.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-content {
+        padding: 60px 0; /* Reducir el padding en dispositivos móviles */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .hero-image {
+        height: 300px; /* Reducir la altura de la imagen en dispositivos móviles */
+    }
+}
+
+/* Partners Section */
+.partners-section {
+    background-color: #147876;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+.partners-section h2 {
+    color: #FDBB2C;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.partner-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.partner-logos img {
+    width: 120px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .partner-logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.testimonial-section .section-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Comillas decorativas */
+.testimonial-quote {
+    font-size: 4rem;
+    color: #E8388C;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+/* Texto del testimonio */
+.testimonial-text {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Separador */
+.testimonial-separator {
+    width: 60px;
+    height: 2px;
+    background-color: #E8388C;
+    border: none;
+    margin: 20px auto;
+}
+
+/* Nombre del cliente */
+.testimonial-name {
+    font-size: 1.2rem;
+    color: #E8388C;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+/* Sección combinada: Servicios y lo que hacemos */
+.services-and-what-we-do-section {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services-and-what-we-do-section .section-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services-and-what-we-do-section .section-subtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+/* Contenedor con imagen y descripción */
+.services-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.services-intro .image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-intro .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.services-intro .text h3 {
+    font-size: 2rem;
+    color: #E8388C;
+    margin-bottom: 20px;
+}
+
+.services-intro .text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Tarjetas de servicio */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    color: #E8388C;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 992px) {
+    .services-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-intro .text {
+        text-align: center;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background-color: #FDBB2C;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.contact-section .cta-button {
+    background-color: #E8388C;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .cta-button:hover {
+    background-color: #147876;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 30px 0;
+    text-align: center;
+    color: #777;
+}
